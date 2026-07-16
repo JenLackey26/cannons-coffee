@@ -1,16 +1,112 @@
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
+          @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-body { 
-  background-image: url(../images/your-image.jpg);
-  color: black;
-  background-color: #063270;
-  margin: 0;
-  padding: 0;
-}
+          :root {
+            --color-black: #000000;
+            --color-catalina: #06327d;
+            --color-bluetiful: #2b70e4;
+            --color-vegan: #209d5c;
+            --color-sunglow: #ffd034;
+            --color-white: #ffffff;
+            --color-light-blue: #cadbf8;
+            --font-main: 'Montserrat', sans-serif;
+          }
+
+          html {
+            box-sizing: border-box;
+          }
+
+
+          *,
+          *::before,
+          *::after {
+            box-sizing: inherit;
+          }
+
+          body {
+            font-family: var(--font-main);
+            font-size: 1.125rem;
+            line-height: 1.5;
+            color: var(--color-black);
+            background-color: var(--color-catalina);
+            padding: 20px;
+          }
+
+          h1 {
+            font-size: 3rem;
+            line-height: 1.1667;
+            font-weight: 300;
+            text-transform: uppercase;
+            margin: 0; 
+            color: var(--color-white);
+          }
+
+          h2 {
+            font-size: 2.5rem;
+            line-height: 1.1667;
+            font-weight: 300;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            color: var(--color-bluetiful);
+          }
+
+          h3 {
+            font-size: 1.75rem;
+            line-height: 1.1667;
+            font-weight: 300;
+            margin-bottom: 1rem;
+          }
+
+        .container {
+      max-width: 1200px;                 
+      margin-right: auto;      
+      margin-left: auto;       
+      padding-right: 20px;     
+      padding-left: 20px;      
+      box-sizing: border-box;  
+    }
+          nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+          }
+
+          nav li {
+            display: inline-block;
+          }
+
+          nav a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: var(--color-bluetiful);
+            color: var(--color-white);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-family: sans-serif;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+          }
+
+          nav a:hover {
+            background-color: var(--color-catalina);
+          }
+
+          .button,
+          a.button {
+          display: inline-block;
+          padding: 0.65rem 1rem;
+          border: 0;
+          border-radius: 0.45rem;
+          background-color: var(--vegan);
+          color: var(--white);
+          font-family: var(--font-primary);
+          font-size: 0.95rem;
+          font-weight: 500;
+          line-height: 1.2;
+          text-align: center;
+          text-decoration: none;
+          text-transform: uppercase;
+          }
+
+
